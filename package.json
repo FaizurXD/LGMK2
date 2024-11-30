@@ -4,7 +4,9 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "node src/server/index.js",
+    "dev": "vite",
+    "server": "node src/server/index.js",
+    "dev:all": "concurrently \"npm run dev\" \"npm run server\"",
     "build": "tsc && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -12,6 +14,7 @@
   "dependencies": {
     "@hcaptcha/react-hcaptcha": "^1.9.3",
     "@tanstack/react-query": "^5.25.0",
+    "concurrently": "^8.2.2",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
