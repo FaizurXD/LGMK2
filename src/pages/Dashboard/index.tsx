@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import DashboardLayout from './DashboardLayout';
+import DashboardLayout from '../../components/layout/DashboardLayout';
 import DashboardHome from './DashboardHome';
 import Profile from './Profile';
 import Generator from './Generator';
